@@ -1,0 +1,332 @@
+/* General reset and basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.first-page {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.6)), url('wall.png');
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+}
+
+/*Home Page Styling */
+
+/* Navigation styling */
+header {
+
+    padding: 10px;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    width: 150px;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+ul li a {
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    border: 2px solid;
+    border-radius: 7px;
+    color: #100f0f;
+    background-color: rgb(240, 168, 51);
+}
+
+ul li a:hover {
+    background-color: #0ea84e;
+    /* Change color on hover */
+}
+
+
+
+
+.Home-content {
+    /* background-image: url(); */
+
+    padding: 40px;
+    text-align: center;
+}
+
+.Home-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.Home-content p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0c0c0c;
+}
+
+.Home-content .btn {
+
+    padding: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    border: 2px solid;
+    border-radius: 7px;
+    color: #100f0f;
+    background-color: rgb(240, 168, 51);
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+
+.Home-content .btn:hover {
+    background-color: #0ea84e;
+}
+
+/* second page */
+
+.second-bg {
+    display: flex; /* Arrange cards in a row */
+    flex-wrap: nowrap; /* Prevent wrapping to the next row */
+    gap: 20px; /* Space between cards */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 20px;
+    scroll-behavior: smooth; /* Smooth scrolling when navigating */
+  }
+  
+  .card {
+    flex: 0 0 auto; /* Prevent cards from shrinking/stretching */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 18rem; /* Fixed card width */
+  }
+  
+  .card img {
+    height: 200px; /* Fixed image height */
+    width: 100%; /* Make the image fill the card's width */
+    object-fit: cover; /* Crop the image to fit without distortion */
+    border-radius: 10px 10px 0 0; /* Round top corners */
+  }
+  
+  .card-body {
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  
+  
+  
+
+
+
+/* review page */
+.thirdpage {
+    margin: 0;
+    background-image: url(feed.png);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(201, 222, 222);
+    color: rgb(6, 6, 6);
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+  }
+
+.container1 {
+    background: rgb(238, 230, 230);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    width: 85%;
+    max-width: 400px;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .heading {
+    margin: 5px;
+    font-size: 30px;
+  }
+  
+  .ratings-container {
+    display: flex;
+    padding: 20px 0;
+  }
+  
+  .rating {
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px 5px;
+  }
+  
+  .rating:hover,
+  .rating.active
+  {
+    background: rgb(27, 183, 97);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: rgb(17, 17, 18);
+    transition: all 300ms ease;
+  }
+  
+  .btn {
+    background-color: rgb(195, 158, 24);
+    color: rgb(204, 156, 24);
+    
+    border: 2;
+    margin: 10px;
+    border-radius: 4px;
+    padding: 12px 30px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    box-shadow: 0 5px 10px rgba(213, 160, 12, 0.3);
+    transition: all 300ms ease;
+  }
+  
+  .btn:active {
+    transform: scale(0.96);
+  }
+  
+ .rating img{
+  width: 40px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive Design */
+/* firstpg */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .Home-content {
+        /* background-image: url(); */
+    
+        padding: 5px;
+        text-align: center;
+    }
+    
+    .Home-content h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+    
+    .Home-content p {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #0c0c0c;
+    }
+    
+    .Home-content .btn {
+    
+        padding: 10px;
+        margin-left: 10px;
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+        transition: color 0.3s ease;
+        border: 2px solid;
+        border-radius: 7px;
+        color: #100f0f;
+        background-color: rgb(240, 168, 51);
+        cursor: pointer;
+        border: 1px solid;
+        border-radius: 4px;
+    }
+    
+    
+    .Home-content .btn:hover {
+        background-color: #0ea84e;
+    }
+
+    
+/* thirdpg */
+    .container1 {
+        background: rgb(238, 230, 230);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        padding: 20px;
+        width: 85%;
+        max-width: 400px;
+        text-align: center;
+        font-size: 20px;
+        margin-left: 30px;
+      }
+      .container1 {
+        background: rgb(238, 230, 230);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        padding: 20px;
+        width: 80%;
+        max-width: 400px;
+        text-align: center;
+        font-size: 20px;
+      }
+      
+    }
+
+/* Smooth Scrolling Animation */
+html {
+    scroll-behavior: smooth;
+}
